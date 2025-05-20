@@ -8,6 +8,7 @@ def minta_nilai(pelajaran):
 
 print("NILAI SIDANIRA")
 
+
 #kelas 7 8 9 mtk
 m1tujuh = minta_nilai('Matematika Semester 1')
 m2tujuh = minta_nilai('Matematika Semester 2')
@@ -68,25 +69,38 @@ bing1sembilan= minta_nilai('BAHASA INGGRIS Semester 5')
 total5 = (bing1tujuh + bing2tujuh + bi1delapan + bing2delapan + bing1sembilan) / 5
 print(f"\n Rata-rata BAHASA INGGRIS: {total5}")
 
+#kelas 7 8 9 PPKN
+p1tujuh = minta_nilai('PPKN Semester 1')
+p2tujuh = minta_nilai('PPKN Semester 2')
+
+p1delapan = minta_nilai('PPKN Semester 3')
+p2delapan = minta_nilai('PPKNSemester 4')
+
+p1sembilan = minta_nilai('PPKNSemester 5')
+
+total6 = (p1tujuh + p2tujuh + p1delapan + p2delapan + p1sembilan) / 5
+print(f"\n Rata-rata PPKN: {total6}")
+
+
 #total nilai semester 1 2 3 4 5
 
 print('Rata-Rata Kelas dari Semester 1-5')
-totalsemester1kelas7 = (m1tujuh + i1tujuh + ii1tujuh + bi1tujuh + bing1tujuh) / 5
+totalsemester1kelas7 = (p1tujuh + m1tujuh + i1tujuh + ii1tujuh + bi1tujuh + bing1tujuh) / 6
 print(f"\n Rata-rata Kelas 7 Semester 1: {totalsemester1kelas7}")
 
-totalsemester2kelas7 = (m2tujuh + i2tujuh + ii2tujuh + bi2tujuh + bing2delapan) / 5
+totalsemester2kelas7 = (p2tujuh + m2tujuh + i2tujuh + ii2tujuh + bi2tujuh + bing2tujuh) / 6
 print(f"\n Rata-rata Kelas 7 Semester 2: {totalsemester2kelas7}")
 
-totalsemester1kelas8 = (m1delapan + i1delapan + ii1delapan + bi1delapan + bing1delapan) / 5
+totalsemester1kelas8 = (p1delapan + m1delapan + i1delapan + ii1delapan + bi1delapan + bing1delapan) / 6
 print(f"\n Rata-rata Kelas 8 Semester 1: {totalsemester1kelas8}")
 
-totalsemester2kelas8 = (m2delapan + i2delapan + ii2delapan + bi2delapan + bing2delapan) / 5
+totalsemester2kelas8 = (p2delapan + m2delapan + i2delapan + ii2delapan + bi2delapan + bing2delapan) / 6
 print(f"\n Rata-rata Kelas 8 Semester 2: {totalsemester2kelas8}")
 
-totalsemester1kelas9 = (m1sembilan + i1sembilan + ii1sembilan + bi1sembilan + bing1sembilan) / 5
+totalsemester1kelas9 = (p1sembilan + m1sembilan + i1sembilan + ii1sembilan + bi1sembilan + bing1sembilan) / 6
 print(f"\n Rata-rata Kelas 9 Semester 1: {totalsemester1kelas9}")
 
 
-totalall = (total1 + total2 + total3 + total4 + total5)
+totalall = (total1 + total2 + total3 + total4 + total5 + total6)
 
-print(f"\n Rata-rata Keseluruhan/SIDANIRA: {totalall / 5}")
+print(f"\n Rata-rata Keseluruhan/SIDANIRA: {totalall / 6}")
